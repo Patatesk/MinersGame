@@ -3,7 +3,7 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 22
+  serializedVersion: 23
   productGUID: e8dded388b5edd34e9012fea89326d6c
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -145,16 +145,18 @@ PlayerSettings:
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
+  enableOpenGLProfilerGPURecorders: 1
   useHDRDisplay: 0
   D3DHDRBitDepth: 0
   m_ColorGamuts: 0000000003000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
+  resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.Madendeneme
-    Standalone: com.DefaultCompany.Madendeneme
+    Standalone: com.DefaultCompany.Maden-deneme
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -217,6 +219,7 @@ PlayerSettings:
   iOSLaunchScreeniPadCustomStoryboardPath: 
   iOSDeviceRequirements: []
   iOSURLSchemes: []
+  macOSURLSchemes: []
   iOSBackgroundModes: 0
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
@@ -361,6 +364,103 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 1
       m_SubKind: 
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Textures: []
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 87
+      m_Height: 87
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 60
+      m_Height: 60
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 20
+      m_Height: 20
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 4
+      m_SubKind: App Store
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -377,6 +477,7 @@ PlayerSettings:
   - m_BuildTarget: WebGL
     m_StaticBatching: 0
     m_DynamicBatching: 0
+  m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs:
   - m_BuildTarget: MacStandaloneSupport
     m_GraphicsJobs: 0
@@ -418,11 +519,13 @@ PlayerSettings:
     m_Automatic: 1
   - m_BuildTarget: AndroidPlayer
     m_APIs: 150000000b000000
-    m_Automatic: 0
+    m_Automatic: 1
   - m_BuildTarget: WebGLSupport
     m_APIs: 0b000000
     m_Automatic: 0
   m_BuildTargetVRSettings: []
+  m_DefaultShaderChunkSizeInMB: 16
+  m_DefaultShaderChunkCount: 0
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
@@ -436,6 +539,7 @@ PlayerSettings:
     m_EncodingQuality: 1
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding: []
+  m_BuildTargetDefaultTextureCompressionFormat: []
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -454,6 +558,7 @@ PlayerSettings:
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
   switchUseGOLDLinker: 0
+  switchLTOSetting: 0
   switchApplicationID: 0x01004b9000490000
   switchNSODependencies: 
   switchTitleNames_0: 
@@ -583,6 +688,7 @@ PlayerSettings:
   switchNetworkInterfaceManagerInitializeEnabled: 1
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
+  switchUseLegacyFmodPriorities: 1
   switchUseMicroSleepForYield: 1
   switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
@@ -693,22 +799,23 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
+  webGLPowerPreference: 2
   scriptingDefineSymbols:
-    1: MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;LEGACY_INPUT_MANAGER
-    4: LEGACY_INPUT_MANAGER
-    7: LEGACY_INPUT_MANAGER;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED
-    13: LEGACY_INPUT_MANAGER
-    14: LEGACY_INPUT_MANAGER
-    19: LEGACY_INPUT_MANAGER
-    21: LEGACY_INPUT_MANAGER
-    25: LEGACY_INPUT_MANAGER
-    27: LEGACY_INPUT_MANAGER
-    28: LEGACY_INPUT_MANAGER
-    29: LEGACY_INPUT_MANAGER
-    30: LEGACY_INPUT_MANAGER
-    31: LEGACY_INPUT_MANAGER
-    32: LEGACY_INPUT_MANAGER
-    33: LEGACY_INPUT_MANAGER
+    Android: LEGACY_INPUT_MANAGER;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED
+    GameCoreScarlett: LEGACY_INPUT_MANAGER
+    GameCoreXboxOne: LEGACY_INPUT_MANAGER
+    LinuxHeadlessSimulation: LEGACY_INPUT_MANAGER
+    Lumin: LEGACY_INPUT_MANAGER
+    Nintendo Switch: LEGACY_INPUT_MANAGER
+    PS4: LEGACY_INPUT_MANAGER
+    PS5: LEGACY_INPUT_MANAGER
+    Stadia: LEGACY_INPUT_MANAGER
+    Standalone: MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;LEGACY_INPUT_MANAGER
+    WebGL: LEGACY_INPUT_MANAGER
+    Windows Store Apps: LEGACY_INPUT_MANAGER
+    XboxOne: LEGACY_INPUT_MANAGER
+    iPhone: LEGACY_INPUT_MANAGER
+    tvOS: LEGACY_INPUT_MANAGER
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -720,8 +827,8 @@ PlayerSettings:
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
-  useReferenceAssemblies: 1
   enableRoslynAnalyzers: 1
+  selectedPlatform: 0
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1
@@ -758,6 +865,7 @@ PlayerSettings:
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
+  vcxProjDefaultLanguage: 
   XboxOneProductId: 
   XboxOneUpdateKey: 
   XboxOneSandboxId: 
@@ -801,6 +909,7 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
+  windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
@@ -808,4 +917,6 @@ PlayerSettings:
   organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
+  playerDataPath: 
+  forceSRGBBlit: 1
   virtualTexturingSupportEnabled: 0

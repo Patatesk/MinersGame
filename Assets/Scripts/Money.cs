@@ -9,7 +9,7 @@ using Save;
 
 public class Money : MonoBehaviour ,ISaveble
 {
-    private int money = 300;
+    private int money = 300000000;
     private int income;
     bool isFast = false;
     [SerializeField] private TextMeshProUGUI moneyText;

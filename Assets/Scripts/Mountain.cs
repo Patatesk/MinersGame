@@ -13,7 +13,7 @@ using MoreMountains.Feedbacks;
 public class Mountain : MonoBehaviour, ISaveble
 {
     public List<GameObject> WorkPoints = new List<GameObject>();
-    public List<SpawnPointHolder> spawnPoints = new List<SpawnPointHolder>();
+    public HashSet<SpawnPointHolder> spawnPoints = new HashSet<SpawnPointHolder>();
     public int MountainIndex;
     public int baseIncome;
     public int levelOneMinerStartCost;

@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4235540329524187574
 Transform:
@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4239857470123407882}
   - {fileID: 4239795283924076091}
@@ -43,6 +44,10 @@ PrefabInstance:
     - target: {fileID: 1958949878543898, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Plant_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958949878543898, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4880297319694598, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
       propertyPath: m_RootOrder
@@ -89,9 +94,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23952599460945634, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23952599460945634, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 482339a5c34c27c44a1ee3b7bce36147, type: 2}
+    - target: {fileID: 33705355791205642, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 86786736c81d0154190c4b35af0fd075, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0b30b3e71a09b243a5b689b2703cd2a, type: 3}
 --- !u!4 &4239857470123407882 stripped
@@ -109,6 +122,10 @@ PrefabInstance:
     - target: {fileID: 1739942862841002, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_Thin_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739942862841002, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4672565630052148, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
       propertyPath: m_RootOrder
@@ -155,9 +172,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23760339950980478, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23760339950980478, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 482339a5c34c27c44a1ee3b7bce36147, type: 2}
+    - target: {fileID: 33360479788852700, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 2a905852ddcfb7449ae3f0c1d016f1d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4471cc0deb167ba44a9971457bc6a130, type: 3}
 --- !u!4 &4239911249753041562 stripped
@@ -175,6 +200,10 @@ PrefabInstance:
     - target: {fileID: 1011082696517618, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
       propertyPath: m_Name
       value: SM_Env_Grass_Thin_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011082696517618, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4906182120362512, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
       propertyPath: m_RootOrder
@@ -221,9 +250,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23674563600373020, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23674563600373020, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 482339a5c34c27c44a1ee3b7bce36147, type: 2}
+    - target: {fileID: 33397053867068072, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: fd16d2554cc751c48a4327641267fa11, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c5ee072d722efd40b174b7390228421, type: 3}
 --- !u!4 &4239795283924076091 stripped

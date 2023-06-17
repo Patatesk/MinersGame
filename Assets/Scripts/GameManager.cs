@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour, ISaveble
     public GameObject[] allMountains;
 
     [SerializeField] private CinemachineVirtualCamera[] vCams;
+    [SerializeField] private CinemachineBrain vCamBrain;
 
     [SerializeField] private GameObject gameCamera;
     [SerializeField] private int[] mountainCosts;
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour, ISaveble
     }
     private void Awake()
     {
+        vCamBrain = Camera.main.GetComponent<CinemachineBrain>();
         CloseMountains();
         ChangeMountain();
     }

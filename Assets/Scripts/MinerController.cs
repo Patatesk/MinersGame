@@ -161,6 +161,8 @@ public class MinerController : MonoBehaviour
             button.GetComponent<UIButton>().interactable = false;
         }
         SetButtonText(button, mountain.upgradeMinerStartCost);
+        ChechEnoughMoneyAndApplyButton(mountain.button, mountain.levelOneMinerStartCost);
+        MoneySignals.Signal_CheckEnoughMoney(CheckAndApply2, mountain.upgradeMinerStartCost);
 
     }
 
@@ -180,12 +182,13 @@ public class MinerController : MonoBehaviour
         minerByLevel[minerLevel - 1].miners.Add(miner);
         CheckUpgradebleMiner();
         SaveLoadSignals.Signal_Save();
+        ChechEnoughMoneyAndApplyButton(mountain.button, mountain.levelOneMinerStartCost);
+        MoneySignals.Signal_CheckEnoughMoney(CheckAndApply2, mountain.upgradeMinerStartCost);
     }
 
     private void Update()
     {
-        ChechEnoughMoneyAndApplyButton(mountain.button, mountain.levelOneMinerStartCost);
-        MoneySignals.Signal_CheckEnoughMoney(CheckAndApply2, mountain.upgradeMinerStartCost);
+      
     }
 
 }
